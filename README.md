@@ -1,35 +1,36 @@
-# Gastronomicon
+# Gastronomicon Drake
 
-A Slimefun addon that adds even more foodstuffs to the game. Best used along with [ExoticGarden](https://github.com/TheBusyBiscuit/ExoticGarden).
+Addon culinario de Slimefun mantenido por DrakesCraft Labs. Añade cadenas de
+ingredientes, comidas, bebidas, fermentación, pesca y cultivos sin reemplazar
+los ítems ni las recetas ya existentes en un mundo.
 
-This addon automatically integrates with DynaTech for crop automation. Both DynaTech and ExoticGarden integrations can be manually disabled in `config.yml`
+## Compatibilidad
 
-## Links
+- Paper o Purpur `1.21.11`
+- Java `21`
+- Slimefun Core Drake `11.0-Drake-1.21.1-SNAPSHOT`
 
-- Wiki: <https://schn.pages.dev/gastronomicon>
-- Download: <https://blob.build/project/Gastronomicon>
+Las integraciones con ExoticGarden, DynaTech y SlimeHUD son opcionales. Se
+detectan al iniciar y pueden desactivarse desde `config.yml` cuando corresponda.
 
-## Requirements
+## Mantenimiento Drake
 
-- Paper (or its forks)
-- Minecraft 1.17+
-- Java 17+
+La rama principal compila contra el API moderno de Paper: los biomas se resuelven
+por `NamespacedKey` y los objetos de pócima usan `PotionMeta#setBasePotionType`.
+Esto conserva las familias climáticas, recetas, IDs y datos legacy de las
+instalaciones existentes.
 
-*Exotic Garden is not required but heavily recommended!*
+## Desarrollo
 
-## API
+```bash
+mvn -B -ntp clean verify
+```
 
-API documentation can be found on the wiki at <https://schn.pages.dev/gastronomicon/custom-food>
+El artefacto generado queda en `target/Gastronomicon-drake v*.jar`. Antes de
+reemplazar un JAR de producción, valida en staging una receta existente, un
+fermentador y una trampa de cangrejos.
 
-## Credits
+## Créditos
 
-Some head textures were taken and/or modified from [minecraft-heads.com](https://minecraft-heads.com/)
-
-[![minecraft-heads banner](https://images.minecraft-heads.com/banners/minecraft-heads.webp)](https://minecraft-heads.com/)
-
-<!-- DRAKES-STATUS:BEGIN -->
-> Estado de sincronizacion: **2026-04-24**.
-> Baseline tecnico vigente: **Paper 1.21.1 + Java 21**.
-> CI principal en `main`: **Gates 1-5 en verde**.
-> Nota: el monorepo completo sigue en migracion incremental por lotes.
-<!-- DRAKES-STATUS:END -->
+Proyecto original de SchnTgaiSpock. Algunas texturas de cabezas provienen o se
+derivan de [minecraft-heads.com](https://minecraft-heads.com/).

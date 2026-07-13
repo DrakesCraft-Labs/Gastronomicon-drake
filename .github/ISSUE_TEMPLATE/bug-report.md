@@ -31,9 +31,4 @@ assignees: ''
 - Slimefun Version:
 - Plugin Version:
 
-<!-- DRAKES-STATUS:BEGIN -->
-> Estado de sincronizacion: **2026-04-24**.
-> Baseline tecnico vigente: **Paper 1.21.1 + Java 21**.
-> CI principal en `main`: **Gates 1-5 en verde**.
-> Nota: el monorepo completo sigue en migracion incremental por lotes.
-<!-- DRAKES-STATUS:END -->
+> Baseline vigente: Paper/Purpur 1.21.11 y Java 21.
