@@ -1,7 +1,6 @@
 package io.github.schntgaispock.gastronomicon;
 
 
-import com.github.drakescraft_labs.labupdate.DrakesLabsReleaseUpdate;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -20,7 +19,6 @@ import io.github.schntgaispock.gastronomicon.core.setup.ItemSetup;
 import io.github.schntgaispock.gastronomicon.integration.DynaTechSetup;
 import io.github.schntgaispock.gastronomicon.integration.SlimeHUDSetup;
 import io.github.schntgaispock.gastronomicon.util.StringUtil;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.updater.BlobBuildUpdater;
 import lombok.Getter;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -46,15 +44,6 @@ public class Gastronomicon extends AbstractAddon {
         info("#======================================#");
         info("#    Gastronomicon by SchnTgaiSpock    #");
         info("#======================================#");
-
-        if (getConfig().getBoolean("options.auto-update")) {
-            if (getDescription().getVersion().startsWith("Dev - ")) {
-                new BlobBuildUpdater(this, getFile(), "Gastronomicon", "Dev").start();
-            } else {
-                info("This is an unofficial build of Gastronomicon, so auto updates are disabled!");
-                info("You can download the official build here: https://blob.build/project/Gastronomicon");
-            }
-        }
 
         ItemSetup.setup();
         ResearchSetup.setup();
