@@ -20,6 +20,12 @@ por `NamespacedKey` y los objetos de pócima usan `PotionMeta#setBasePotionType`
 Esto conserva las familias climáticas, recetas, IDs y datos legacy de las
 instalaciones existentes.
 
+El fork no descarga actualizaciones en caliente. Antes de sustituir el JAR,
+respalda `plugins/Gastronomicon-drake.jar` y `plugins/Gastronomicon/`, registra
+el checksum del candidato y valida en staging una receta legacy, un fermentador
+y una trampa de cangrejos. Instala un único JAR durante una ventana de reinicio
+y conserva el anterior para rollback.
+
 ## Desarrollo
 
 ```bash
