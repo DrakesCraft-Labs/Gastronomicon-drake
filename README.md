@@ -1,6 +1,6 @@
 <div align="center">
 
-![Gastronomicon-Drake Banner](./banner.svg)
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Gastronomicon-drake/main/banner.svg" alt="Gastronomicon-drake Banner" width="920" />
 
 # 🧪 Gastronomicon-Drake
 
