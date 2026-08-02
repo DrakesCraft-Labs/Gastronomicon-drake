@@ -73,7 +73,9 @@ public class Gastronomicon extends AbstractAddon {
             try {
                 info("DynaTech was found on this server!");
                 info("Registering Gastronomicon crops with DynaTech...");
-                DynaTechSetup.setup();
+                if (!DynaTechSetup.setup()) {
+                    warn("DynaTech no expuso Growth Chambers compatibles; se omite la integracion de cultivos.");
+                }
             } catch (NoClassDefFoundError e) {
                 warn("This server is using an incompatitable version of DynaTech");
                 warn("Please keep Gastronomicon and DynaTech up to date!");
