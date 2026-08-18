@@ -2,73 +2,72 @@
 
   <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Gastronomicon-drake/main/banner.svg" alt="Gastronomicon-drake Banner" width="920" />
 
-# 🧪 Gastronomicon-Drake
+# 🍔 Gastronomicon-Drake
 
-**Addon de Slimefun4 con Aceleración Nativa en Rust (Java 21 Project Panama FFM API)**
+**Alta cocina culinaria, electrodomésticos de cocina industrial, recetas gourmet y nutrición avanzada para Slimefun4.**
 
 <p>
   <a href="https://github.com/DrakesCraft-Labs/Gastronomicon-drake"><img src="https://img.shields.io/badge/GitHub-Gastronomicon--Drake-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
-  <img src="https://img.shields.io/badge/Java-21_FFM_Panama-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21 FFM"/>
-  <img src="https://img.shields.io/badge/Rust-FFM_Accelerated-FF4500?style=for-the-badge&logo=rust&logoColor=white" alt="Rust Native"/>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
   <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
 </p>
 
 </div>
 
 ---
 
-## ⚡ Novedades del Modelo Híbrido Cero-Riesgo
+## 📖 ¿Qué es Gastronomicon-Drake?
 
-`Gastronomicon-Drake` integra el componente Panama FFM **`RustNativeBridge`** para delegar la aceleración de tickers de máquinas y cálculos pesados directamente al motor nativo `Slimefun-Rust` (`slimefun_ffi`):
-- 🚀 **Procesamiento de Ticks en Nanosegundos**: Multi-hilo paralelo real en CPU sin pausas de Garbage Collector.
-- 🛡️ **Preservación Total sin Reset (SQLite 0-Reset)**: Mantiene intactos todos los bloques e inventarios existentes en `stored-blocks.db`.
+**Gastronomicon-Drake** es una expansión culinaria exhaustiva para **Slimefun4**. Diseñado para integrarse perfectamente con *ExoticGarden* y *Cultivation*, transforma la alimentación de Minecraft añadiendo más de 150 nuevos platos, bebidas, postres de pastelería, electrodomésticos de cocina y estaciones de procesamiento de alimentos con efectos de estado positivos.
+
+Todo el contenido se investiga y fabrica directamente desde la **Guía de Slimefun (`/sf guide`)** en la categoría de *Gastronomicon*.
 
 ---
 
-## 🛠️ Compilación
+## 🍳 Electrodomésticos y Maquinaria de Cocina
 
-```bash
-mvn clean package
-```
+### 🔪 1. Estaciones de Preparación Culinaria
+* **Mesón de Cocina (Kitchen Counter)**: Estación base para corte, mezcla y preparación de ingredientes preliminares.
+* **Licuadora Industrial (Blender)**: Trituración de frutas, verduras y lácteos para la elaboración de batidos y purés.
+* **Horno Gastronómico (Baking Oven)**: Cocción precisa de panes especiales, pizzas, pasteles y tartas rellenas.
+* **Plancha y Sartén de Fritura**: Elaboración de hamburguesas gourmet, filetes marinados y salteados asiáticos.
+
+### 🥤 2. Bebidas y Cervecería Ligera
+* **Prensa de Frutas y Extractor de Jugos**: Extracción de néctar puro para batidos energizantes.
+* **Cafetera y Tetera Técnica**: Bebidas calientes con efectos de aceleración (Speed II) y recuperación de resistencia.
+* **Refrescos Carbonatados**: Bebidas con alta saturación que eliminan estados negativos.
+
+### 🥗 3. Platos Gourmet y Nutrición Avanzada
+* Comidas completas que otorgan corazones de absorción, visión nocturna y regeneración duradera.
+* Menús temáticos: desayunos campestres, comida rápida americana, sushi japonés y repostería francesa.
+
+---
+
+## 📋 Compatibilidad Técnica
+
+| Parámetro | Requisito |
+|---|---|
+| **Servidor** | Paper / Purpur / Folia **1.21.11** |
+| **Java** | **Java 21** LTS |
+| **Core Requerido** | [Slimefun4-Drake](https://github.com/DrakesCraft-Labs/Slimefun4-Drake) |
+| **Integraciones Recomendadas** | ExoticGarden, Cultivation |
+| **Arquitectura** | 100% Server-side |
+
+---
+
+## 📥 Instalación
+
+1. Descarga la última versión de `Gastronomicon-drake.jar` desde la pestaña [Versions](https://modrinth.com/mod/gastronomicon-drake/versions).
+2. Coloca el archivo `.jar` en la carpeta `plugins/` de tu servidor junto a `Slimefun4-Drake.jar`.
+3. Inicia o reinicia el servidor.
 
 ---
 
 <div align="center">
 
-**DrakesCraft Labs** · Mantenido por [**JackStar6677-1**](https://github.com/JackStar6677-1)
+**Desarrollado y Mantenido por [DrakesCraft Labs](https://github.com/DrakesCraft-Labs)**  
+*Basado en el trabajo original de SchnTgaiSpock.*  
+Licencia **GPL-3.0-only**.
 
 </div>
-
-## Qué añade al juego
-
-A Slimefun addon that adds even more food to the game. Works best with ExoticGarden
-
-
-Todo se fabrica y se investiga desde la guía normal (`/sf guide`), como cualquier otro contenido
-de Slimefun: no hace falta ningún comando especial para empezar.
-
-## Compatibilidad
-
-| | |
-|---|---|
-| Servidor | Paper / Purpur **1.21.11** |
-| Java | **21** |
-| Requiere | [Slimefun4-Drake](https://github.com/DrakesCraft-Labs/Slimefun4-Drake) |
-| Lado | Solo servidor — quien juega no instala nada |
-| Versión | ${project.version} |
-
-## Instalación
-
-1. Descarga el `.jar` de la última versión.
-2. Déjalo en la carpeta `plugins/` del servidor, junto a Slimefun.
-3. Reinicia el servidor. Los objetos aparecen solos en la guía.
-
-> Este addon está portado al fork de Slimefun de DrakesCraft. Con el Slimefun original puede no
-> cargar, porque cambia el espacio de nombres de las clases.
-
-## Créditos
-- SchnTgaiSpock
-
-Port y mantenimiento por **DrakesCraft Labs**. La autoría original es de quien figura arriba; el detalle está en [docs/UPSTREAM_ATTRIBUTION.md](https://raw.githubusercontent.com/DrakesCraft-Labs/Gastronomicon-drake/main/docs/UPSTREAM_ATTRIBUTION.md).
-
-Licencia **GPL-3.0-only**.
